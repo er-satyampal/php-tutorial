@@ -7,11 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+  
     <?php
 
 
-$x = "Satyampal.com";
-echo "I love $x!";
+$x = "W3SCHOOLS";
+
+
+echo "I Love $x!";
 ?>
 
 </body>
