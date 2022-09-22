@@ -12,6 +12,8 @@
     $b = "How are you";
 
     echo  $a;
+
+    
     ?>
 </body>
 </html>
