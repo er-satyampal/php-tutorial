@@ -9,7 +9,7 @@
 <body>
     <?php
     $a = "Hello, Men";
-    $b = "How are you";
+    $b = "who are you ";
 
     echo  $a;
 
