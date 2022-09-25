@@ -11,10 +11,10 @@
     <?php
 
 
-$x = "W3SCHOOLS";
+$x = "Nature";
 
 
-echo "I Love $x!";
+echo "I hate $x!";
 ?>
 
 </body>
