@@ -8,9 +8,7 @@
 </head>
 <body>
 <?php
-/*This is the Php file
-Which the serverside langauge.
-*/
+
 ?>
 </body>
 </html>
