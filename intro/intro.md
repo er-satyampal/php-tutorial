@@ -27,4 +27,3 @@ PHP can send and receive cookies
 PHP can add, delete, modify data in your database
 PHP can be used to control user-access
 PHP can encrypt data
-With PHP you are not limited to output HTML. You can output images, PDF files, and even Flash movies. You can also output any text, such as XHTML and XML.
