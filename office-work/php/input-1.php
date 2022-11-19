@@ -1,6 +1,6 @@
 <?php
 
-echo " Product Cost:- ".($_GET["p_cost"])."<br />";
+echo " Product Cost:- ".($_GET["p_cost"])."₹"."<br />";
 
 echo "Tax:- ".($_GET["tax"])."%"."<br />";
 
@@ -14,4 +14,13 @@ $c =($_GET["discount"]);
 
  $d = ($a-($a*$b)/100);    //Taxable amount
 
- $e = "";
+ $e = ($d-($d*$c)/100); // Discountable Amount
+
+ echo "Discountable Amount :- ".(($d*$c)/100)."₹"."<br  />";
+ echo "<br  />";
+ echo "Taxable Amount :- ".(($a*$b)/100)."₹";
+
+echo ("<hr>");
+
+echo "Final Payment :- ".($d-($d*$c)/100)."₹"; 
+
