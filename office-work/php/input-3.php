@@ -1,3 +1,6 @@
 <?php
 
-var_dump($_REQUEST['radio_button']);
+$a = ($_REQUEST['radio_button']);
+
+
+echo($a);
