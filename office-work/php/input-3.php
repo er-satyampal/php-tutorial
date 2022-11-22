@@ -24,7 +24,8 @@ $discount = ($_REQUEST['radio_button']);
 
 // Variables are ending from here---------------+
 
+$tax_amount = $product_cost-($product_cost*$tax/100);
 
-
+$dis_amount = $product_cost-($product_cost)
 // Second Variable Start From----------------------+ From Here......
 
