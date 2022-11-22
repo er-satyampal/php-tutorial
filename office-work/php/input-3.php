@@ -20,7 +20,6 @@ $tax = ($_GET["tax"]);
 
 $discount = ($_REQUEST['radio_button']);
 
-echo"Taxable mount :-".
 
 // Variables are ending from here---------------+
 
@@ -28,6 +27,10 @@ $tax_amount = $product_cost-($product_cost*$tax/100);
 
 $dis_amount = $product_cost-($product_cost*$discount/100);
 
-ech
 // Second Variable Start From----------------------+ From Here......
+
+// Final Computing  starts from here -----
+
+echo"Taxable mount :-".($tax_amount)."<br/>";
+
 
