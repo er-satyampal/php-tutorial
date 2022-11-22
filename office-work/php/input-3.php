@@ -13,11 +13,15 @@ echo"<hr/>";
 
 // Given Values Appearing at here ----------End/
 
+// Variables are atarting from here-----------------+
+$product_cost = ($_GET["p_cost"]);
 
-
-$
+$tax = ($_GET["tax"]);  
 
 $discount = ($_REQUEST['radio_button']);
 
+// Variables are ending from here---------------+
 
-echo($a);
+echo"Your Taxable amout ".($product_cost*$tax/100)."<br/>";
+
+echo 
