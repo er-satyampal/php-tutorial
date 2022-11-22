@@ -21,13 +21,22 @@ $tax = ($_GET["tax"]);
 $discount = ($_REQUEST['radio_button']);
 
 
-// Variables are ending from here---------------+
+// Variables are ending from here--------------+
+echo "Your Tax Amount :- ".($product_cost*$tax/100);
+
+echo "Your Tax Amount :- ".($product_cost*$tax/100);
+
+echo"<hr/>";
+
+//    -------------------------------------------> 
 
 $tax_amount = $product_cost-($product_cost*$tax/100);
 
 $dis_amount = $product_cost-($product_cost*$discount/100);
 
+
 // Second Variable Start From----------------------+ From Here......
+
 
 // Final Computing  starts from here -----
 
