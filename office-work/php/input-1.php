@@ -12,13 +12,15 @@ $a =($_GET["p_cost"]);
 $b =($_GET["tax"]);
 $c =($_GET["discount"]);
 
- $d = ($a-($a*$b)/100);    //Taxable amount
+ $d = ($a+($a*$b)/100);    //Taxable amount
 
  $e = ($d-($d*$c)/100); // Discountable Amount
 
- echo "Discountable Amount :- ".(($d*$c)/100)."₹"."<br  />";
- echo "<br  />";
  echo "Taxable Amount :- ".(($a*$b)/100)."₹";
+ echo "<br  />";
+ echo "Discountable Amount :- ".(($d*$c)/100)."₹"."<br  />";
+ 
+
 
 echo ("<hr>");
 
