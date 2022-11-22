@@ -20,8 +20,11 @@ $tax = ($_GET["tax"]);
 
 $discount = ($_REQUEST['radio_button']);
 
+
+
 // Variables are ending from here---------------+
 
-echo"Your Taxable amout ".($product_cost*$tax/100)."<br/>";
 
-echo 
+
+// Second Variable Start From----------------------+ From Here......
+
