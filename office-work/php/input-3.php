@@ -1,9 +1,20 @@
 <?php
 // Given Values Appearing at here ----------End/
-echo"Product Cost :- ".($_GET["p_cost"])."₹"."<br />";
-echo"Tax :- ".($_GET["tax"])."%"."<br />";
-echo "Discount :- ".($_GET["radio_button"])."%"."<br />";
-echo"<hr/>";
+
+
+
+
+
+// echo"Product Cost :- ".($_GET["p_cost"])."₹"."<br />"; 
+// echo"Tax :- ".($_GET["tax"])."%"."<br />"; 
+// echo "Discount :- ".($_GET["radio_button"])."%"."<br />"; 
+
+
+
+
+
+
+// echo"<hr/>";
 
 // // Given Values Appearing at here ----------End/
 // // Variables are atarting from here-----------------+
@@ -27,15 +38,68 @@ $c =($_GET["radio_button"]);
  $e = ($d-($d*$c)/100);
 
  
- echo "Taxable Amount :- ".(($a*$b)/100)."₹";
- echo "<br  />";
- echo "<br  />";
+//  echo "Taxable Amount :- ".(($a*$b)/100)."₹";
+//  echo "<br  />";
+//  echo "<br  />";
 
 
- echo "Discountable Amount :- ".(($d*$c)/100)."₹"."<br  />";
+//  echo "Discountable Amount :- ".(($d*$c)/100)."₹"."<br  />";
 
  
-echo ("<hr>");
+// echo ("<hr>");
 
-echo "Final Payment :- ".($d-($d*$c)/100)."₹"; 
+// echo "Final Payment :- ".($d-($d*$c)/100)."₹"; 
 
+?>
+<html>
+    <head>
+<style>
+    *{
+    }
+    table{
+        margin-left:150px; 
+        margin-top:100px;
+        border-cosllapse: collapse;
+        width:400px;
+        
+    }
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.td-1{
+    width:70%;
+}
+
+.td-2{
+    width:30%;
+}
+</style>
+    </head>
+</html>
+ <body>
+    <table>
+        <tr>
+            <td class="td-1" > <?php echo"Product Cost "; ?> </td>
+            <td class="td-2" > <?php echo($_GET["p_cost"])."₹"; ?> </td>
+        </tr>
+        
+        <tr>
+            <td  class="td-1"> <?php echo"Tax "; ?></td>
+            <td  class="td-2"> <?php echo($_GET["tax"])."%"; ?></td>
+        </tr>
+        <tr>
+            <td class="td-1"> <?php echo "Discount " ?> </td>
+            <td class="td-2"> <?php echo($_GET["radio_button"])."%"; ?> </td>
+        </tr>
+        <tr>
+                <td rowspan="2"></td>
+                <td><?php echo "Discount"; ?></td>
+                <td><?php echo (($d*$c)/100)."₹";?> </td>
+        </tr>
+        <tr>
+               <td> <?php echo "Final Payment  "; ?></td>
+               <td><?php echo ($d-($d*$c)/100)."₹"; ?></td>
+        </tr>
+    </table>
+ </body>
