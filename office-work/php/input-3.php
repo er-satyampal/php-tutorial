@@ -80,17 +80,20 @@ $c =($_GET["radio_button"]);
  <body>
     <table>
         <tr>
-            <td class="td-1" > <?php echo"Product Cost "; ?> </td>
+            <td class="td-1" colspan="3" > <?php echo"Product Cost "; ?> </td>
             <td class="td-2" > <?php echo($_GET["p_cost"])."₹"; ?> </td>
         </tr>
         
         <tr>
-            <td  class="td-1"> <?php echo"Tax "; ?></td>
+            <td  class="td-1" colspan="3"> <?php echo"Tax "; ?></td>
             <td  class="td-2"> <?php echo($_GET["tax"])."%"; ?></td>
         </tr>
         <tr>
-            <td class="td-1"> <?php echo "Discount " ?> </td>
+            <td class="td-1" colspan="3"> <?php echo "Discount " ?> </td>
             <td class="td-2"> <?php echo($_GET["radio_button"])."%"; ?> </td>
+        </tr>
+        <tr style="height:30px">
+            <td colspan="4"></td>
         </tr>
         <tr>
                 <td rowspan="2"></td>
