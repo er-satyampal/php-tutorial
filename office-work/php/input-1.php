@@ -67,7 +67,7 @@ $c =($_GET["discount"]);
         <tr>
             <td class="td-1" colspan="3" > <?php echo "Discount";  ?> </td>
             <td class="td-2"> <?php echo($_GET["discount"])."%";  ?> </td>
-        </tr>
+        </tr>   
         <tr>
                 <td rowspan="3"></td>
                 <td><?php echo "Taxable Amount"; ?></td>
