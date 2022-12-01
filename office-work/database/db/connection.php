@@ -1,21 +1,17 @@
 <?php
 
-$host = '127.0.0.1';
+$host = 'localhost';
 $db = 'school';
 $username='root';
-$password=' ';
+$password='';
 $charset = 'utf8mb4';
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$dsn ="mysql:host=$host;dbname=$db;charset=$charset";
 
 try{
-    $pdo = new PDO($dsn, $user, $password);
+    $connection = new PDO($dsn, $username, $password);
 
-    echo"Hello Database";
 }catch(PDOException $e){
-     throw new PDOException($e->getMessage());
+    echo "Error: ". $e->getMessage();
 }
-
-
-
 ?>
