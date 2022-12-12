@@ -31,6 +31,7 @@ td, th, tr {
     <th>Email</th>
     <th>Mobile</th>
     <th>Country</th>
+    <th>Delete Data</th>
   </tr>
   <?php
 
