@@ -31,7 +31,11 @@ td, th, tr {
     <th>Email</th>
     <th>Mobile</th>
     <th>Country</th>
-    <th>Delete Data</th>
+    <th>
+      <button>
+        <a href="delete.php">Delete</a>
+      </button>
+    </th>
   </tr>
   <?php
 
