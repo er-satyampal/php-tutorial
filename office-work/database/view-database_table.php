@@ -24,18 +24,14 @@ td, th, tr {
 <h2>HTML Table</h2>
 
 <table>
-  <tr>
+  <tr> 
     <th>ID</th>
     <th>Full Name</th>
     <th>DOB</th>
     <th>Email</th>
     <th>Mobile</th>
     <th>Country</th>
-    <th>
-      <button>
-        <a href="delete.php">Delete</a>
-      </button>
-    </th>
+    <th>Changes</th>
   </tr>
   <?php
 
@@ -49,18 +45,23 @@ td, th, tr {
 
     while($row = $sth->fetch()){
 
-    echo "
+      $del = 'http://localhost/php-tutorial/office-work/database/delete.php?uid='.$row->id;
+      $edit = 'http://localhost/php-tutorial/office-work/database/update-std-profile.php?uid='.$row->id;
+   
+      echo '
     <tr>
-      <td>".$row->id."</td>
-      <td>".$row->f_name. " " .$row->l_name. "</td>
-      <td>".$row->dob."</td>
-      <td>".$row->e_mail."</td>
-      <td>".$row->number."</td>
-      <td>".ucwords($row->country)."</td>
+      <td>'.$row->id.'</td>
+      <td>'.$row->f_name. ' ' .$row->l_name. '</td>
+      <td>'.$row->dob.'</td>
+      <td>'.$row->e_mail.'</td>
+      <td>'.$row->number.'</td>
+      <td>'.ucwords($row->country).'</td>
+      <td>
+      <a href="'.$del.'" target="_blank">Delete</a>
+      /
+      <a href="'.$edit.'">Edit</a></td>
     </tr>
-    ";
-    
-    }
+    ';}
     ?>
 </table>
 </body>
