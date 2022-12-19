@@ -18,7 +18,6 @@ $sth->bindParam(':db_email', $email);
 $sth->bindParam(':db_mobile_no', $mobile_no);
 $sth->bindParam(':db_country', $country);
 	
-
 if($sth->execute()){
 echo "Data Inserted Successfuly";	
 }else{

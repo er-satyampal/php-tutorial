@@ -35,6 +35,7 @@ td, th, tr {
   </tr>
   <?php
 
+
 // $sth = $connection->prepare("SELECT * FROM `students` LIMIT 2");
 // $sth = $connection->prepare("SELECT * FROM `students` LIMIT 1, 3");
     $sth = $connection->prepare("SELECT * FROM `students`");

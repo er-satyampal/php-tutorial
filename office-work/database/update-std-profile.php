@@ -15,7 +15,6 @@ if(!ISSET($_REQUEST["uid"])){
   $std_data = $sth->fetch();
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +56,7 @@ if(!ISSET($_REQUEST["uid"])){
 
         <label for="Mobile Number">Mobile Number</label>  
 
-        <input type="number" placeholder="Phone No." name="number" value="<?= $std_data->number ?>">
+        <input type="number" pla  `ceholder="Phone No." name="number" value="<?= $std_data->number ?>">
 
         
         <select name="country">
