@@ -7,8 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    echo "Hello-World";
+
+<?php
+    $a = 20;
+    $b = 40;
+    
+    echo ($a+$b);
     ?>
+
 </body>
 </html>

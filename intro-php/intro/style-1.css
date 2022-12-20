@@ -1,0 +1,15 @@
+body{
+  height:5432px;
+  width:100px;
+  background-color:black;
+}
+  #div1{
+        height:500px;
+        width:500px;
+        background-image:linear-gradient(-130deg, rgb(36, 221, 221), rgb(3, 245, 245), rgb(17, 212, 212) )
+    }
+
+
+
+
+  

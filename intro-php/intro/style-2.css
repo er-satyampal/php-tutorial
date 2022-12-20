@@ -1,0 +1,28 @@
+table{
+    border-collapse:collapse;
+  
+
+}
+ .clr-one{
+    background-color: #828d8a;
+    height:30px;
+    width:70px;
+ }
+ .clr-two{
+    background-color: #adbfc0;
+    height:30px;
+    width:70px;
+ }
+
+ .clr-one:hover {
+    background-color: #498a9b;
+    height:30px;
+    width:70px;
+ }
+
+ .clr-two:hover{
+    background-color: #116392;
+    height:30px;
+    width:70px;
+ }
+ 
